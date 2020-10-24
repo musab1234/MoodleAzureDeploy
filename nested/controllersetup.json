@@ -21,7 +21,7 @@
                 "settings": {
                     "fileUris": [
                         "[variables('scriptUri')]",
-                        "[variables('crowdStrikeScriptUri')",
+                        "[variables('crowdStrikeScriptUri')]",
                         "[parameters('moodleCommon').commonFunctionsScriptUri]"
                     ]
                 },
