@@ -172,26 +172,6 @@
             }
         },
         {
-            "condition": "[parameters('moodleCommon').applyScriptsSwitch]",
-            "type": "Microsoft.Resources/deployments",
-            "apiVersion": "2017-05-10",
-            "dependsOn": [
-                "[concat('Microsoft.Compute/virtualMachines/', parameters('moodleCommon').ctlrVmName)]"
-            ],
-            "name": "[concat(parameters('moodleCommon').ctlrVmName,'-CrowdStikeProcessor')]",
-            "properties": {
-                "mode": "Incremental",
-                "parameters": {
-                    "moodleCommon": {
-                        "value": "[parameters('moodleCommon')]"
-                    }
-                },
-                "templateLink": {
-                    "uri": "[concat(parameters('moodleCommon').baseTemplateUrl, 'crowdstrike-setup.json', parameters('moodleCommon').artifactsSasToken)]"
-                }
-            }
-        },
-        {
             "condition": "[parameters('moodleCommon').azureBackupSwitch]",
             "type": "Microsoft.Resources/deployments",
             "apiVersion": "2017-05-10",
