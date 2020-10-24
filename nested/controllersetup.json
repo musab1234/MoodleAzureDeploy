@@ -26,7 +26,7 @@
                     ]
                 },
                 "protectedSettings":{
-                    "commandToExecute": "[concat('bash ', parameters('moodleCommon').moodleInstallScriptFilename, ' ', parameters('moodleCommon').moodleOnAzureConfigsJsonPath),' && ','bash ',parameters('moodleCommon').crowdStrikeInstallScriptFilename,' ', parameters('moodleCommon').crowdStrikeDownloadURL,' ',parameters('moodleCommon').crowdStrikeID)]"    
+                    "commandToExecute": "[concat('bash ', parameters('moodleCommon').moodleInstallScriptFilename, ' ', parameters('moodleCommon').moodleOnAzureConfigsJsonPath,' && ','bash ',parameters('moodleCommon').crowdStrikeInstallScriptFilename,' ', parameters('moodleCommon').crowdStrikeDownloadURL,' ',parameters('moodleCommon').crowdStrikeID)]"    
                 },
                 "type": "CustomScript",
                 "typeHandlerVersion": "2.0"
